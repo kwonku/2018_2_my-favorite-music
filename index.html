@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>my favorite music</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<style type="text/css">
+
+		#mer {position: absolute; top: 320px; left: 185px;}
+		#cruising {position: absolute; top: 320px; left: 435px;}
+		#grace {position: absolute; top: 320px; left: 685px;}
+		#paradise {position: absolute; top: 320px; left: 935px;}
+		#drive {position: absolute; top: 320px; left: 1185px;}
+		#pado {position: absolute; top: 320px; left: 1435px;}
+
+		
+		#r1 {position: absolute; animation-name: a1; animation-duration: 2s; top: 325px; left: 190px; transition: all 1s;}
+		#r2 {position: absolute; animation-name: a2; animation-duration: 2s; top: 325px; left: 440px; transition: all 1s;}
+		#r3 {position: absolute; animation-name: a3; animation-duration: 2s; top: 325px; left: 690px; transition: all 1s;}
+		#r4 {position: absolute; animation-name: a4; animation-duration: 2s; top: 325px; left: 940px; transition: all 1s;}
+		#r5 {position: absolute; animation-name: a5; animation-duration: 2s; top: 325px; left: 1190px; transition: all 1s;}
+		#r6 {position: absolute; animation-name: a6; animation-duration: 2s; top: 325px; left: 1440px; transition: all 1s;}
+
+		@keyframes a1{
+   	 0%   {left:190px; top:425px;}
+    100% {left:190px; top:325px;}}
+
+		@keyframes a2{
+   	 0%   {left:440px; top:425px;}
+    100% {left:440px; top:325px;}}
+
+		@keyframes a3{
+   	 0%   {left:690px; top:425px;}
+    100% {left:690px; top:325px;}}
+
+		@keyframes a4{
+   	 0%   {left:940px; top:425px;}
+    100% {left:940px; top:325px;}}
+
+		@keyframes a5{
+   	 0%   {left:1190px; top:425px;}
+    100% {left:1190px; top:325px;}}
+
+		@keyframes a6{
+   	 0%   {left:1440px; top:425px;}
+    100% {left:1440px; top:325px;}}
+
+	</style>
+</head>
+<body>
+	<img src="r1.png" id="r1">
+	<img src="r2.png" id="r2">
+	<img src="r3.png" id="r3">
+	<img src="r4.png" id="r4">
+	<img src="r5.png" id="r5">
+	<img src="r6.png" id="r6">
+	
+	<img src="mer.png" id="mer">
+	<img src="cruising.png" id="cruising">
+	<img src="grace.png" id="grace">
+	<img src="paradise.png" id="paradise">
+	<img src="drive.png" id="drive">
+	<img src="pado.png" id="pado">
+
+	<audio id="merM">
+  		<source src="mer.mp3" type="audio/mpeg"> 		
+	</audio>
+	<audio id="cruisingM">
+  		<source src="cruising.mp3" type="audio/mpeg"> 		
+	</audio>
+	<audio id="graceM">
+  		<source src="grace.mp3" type="audio/mpeg"> 		
+	</audio>
+	<audio id="paradiseM">
+  		<source src="paradise.mp3" type="audio/mpeg"> 		
+	</audio>
+	<audio id="driveM">
+  		<source src="drive.mp3" type="audio/mpeg"> 		
+	</audio>
+	<audio id="padoM">
+  		<source src="pado.mp3" type="audio/mpeg"> 		
+	</audio>
+
+<script type="text/javascript">
+	var toggle = "off";
+
+	mer.onclick = function(){
+		if(toggle =="off"){
+				r1.style.top = "425px";
+				toggle = "on";
+				merM.play();
+			}else{
+			r1.style.top = "325px";
+			toggle = "off";
+			merM.pause();
+			}}
+	cruising.onclick = function(){
+		if(toggle =="off"){
+				r2.style.top = "425px";
+				toggle = "on";
+				cruisingM.play();
+			}else{
+			r2.style.top = "325px";
+			toggle = "off";
+			cruisingM.pause();
+			}}
+	grace.onclick = function(){
+		if(toggle =="off"){
+				r3.style.top = "425px";
+				toggle = "on";
+				graceM.play();
+			}else{
+			r3.style.top = "325px";
+			toggle = "off";
+			graceM.pause();
+			}}	
+	paradise.onclick = function(){
+		if(toggle =="off"){
+				r4.style.top = "425px";
+				toggle = "on";
+				paradiseM.play();
+			}else{
+			r4.style.top = "325px";
+			toggle = "off";
+			paradiseM.pause();
+			}}	
+	drive.onclick = function(){
+		if(toggle =="off"){
+				r5.style.top = "425px";
+				toggle = "on";
+				driveM.play();
+			}else{
+			r5.style.top = "325px";
+			toggle = "off";
+			driveM.pause();
+			}}	
+	pado.onclick = function(){
+		if(toggle =="off"){
+				r6.style.top = "425px";
+				toggle = "on";
+				padoM.play();
+			}else{
+			r6.style.top = "325px";
+			toggle = "off";
+			padoM.pause();
+			}}	
+
+</script>
+</body>
+</html>
